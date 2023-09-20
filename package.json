@@ -1,0 +1,18 @@
+{
+  "name": "pkgdev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg index.js --out-path bin",
+    "build:arm": "pkg index.js --out-path bin -t node18-linux-armv7",
+    "clean": "rimraf bin"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pkg": "^5.8.1",
+    "rimraf": "^5.0.1"
+  }
+}
